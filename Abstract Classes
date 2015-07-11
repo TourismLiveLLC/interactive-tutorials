@@ -1,5 +1,5 @@
 Abstraction means the ability to make a class abstract in OOP. 
-An abstract class is one that cannot be instantiated. 
+An abstract class is one that cannot be instantiated. It may or may not have abstract methods
 All other functionality of the class still exists, and its fields, methods, and constructors are all accessed 
 in the same manner. But cannot create an instance of the abstract class.
 
@@ -50,7 +50,10 @@ public abstract class Employee
 
 The class is now abstract, but it still has three fields, few methods, and one constructor.
 This means the class can't directlt creat object of its type. But can help an inherited class to create object.
-Thus the class's functionality totallt abstracted from outside.
+Thus the class's functionality totallt abstracted from outside. It must be noted that every sub class inherited from abstract
+class must have improve/different implementation of abstract functions of abstract class. For example
+Employee is an abstract class and computePay,mailCheck are abstract functions, so they must have improved/different
+implementations in sub class that is salary in this case
 
 /* File name : Salary.java */
 public class Salary extends Employee
